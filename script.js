@@ -130,6 +130,8 @@ class Filter {
         this.color.innerHTML = '';
         this.shape.innerHTML = '';
         this.elements.innerHTML = '';
+        this.color1 = '';
+        this.shape1 = '';
         this.get_json_fill();
     }
 
