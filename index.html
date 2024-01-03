@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="filters">
+        <ul class="filters_color"></ul>
+
+        <ul class="filters_shape"></ul>
+
+        <div class="button add">Фільтрувати</div>
+
+        <div class="button clear">Відмінити</div>
+
+        <ul class="elements"></ul>
+
+        <div class="total">
+            Разом: <span>16</span> елем.
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        new Filter('.filters_color', '.filters_shape', '.elements', '.button', '.total span').init()
+    </script>
+</body>
+</html>
